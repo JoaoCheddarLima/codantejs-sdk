@@ -18,7 +18,7 @@ This repository aims to help coding along with the [Codante API](https://docs.ap
 ```js
 import { CodanteClient, CountriesTypes } from "codantejs-sdk";
 
-CodanteClient.events({
+CodanteClient.olympics.events({
   country: CountriesTypes.BRA,
   page: 1,
 })
@@ -26,7 +26,7 @@ CodanteClient.events({
   .catch(console.error);
 
 //All optional params down below mocked
-CodanteClient.events({
+CodanteClient.olympics.events({
   country: CountriesTypes.BRA,
   discipline: DisciplinesTypes.FBL,
   venue: VenuesTypes.CTX,
@@ -43,7 +43,7 @@ CodanteClient.events({
 ```js
 import { CodanteClient } from "codantejs-sdk";
 
-CodanteClient.event(1)
+CodanteClient.olympics.event(1)
     .then(console.log)
     .catch(console.error);
 ```

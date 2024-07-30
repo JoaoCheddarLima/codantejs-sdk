@@ -2,6 +2,6 @@
 
 import { CodanteClient } from '../lib/index';
 
-CodanteClient.event(1)
-    .then(console.log)
-    .catch(console.error);
+CodanteClient.olympics.events().then((response) => {
+    console.log(response);
+});
