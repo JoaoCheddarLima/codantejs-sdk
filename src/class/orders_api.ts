@@ -59,7 +59,7 @@ export class CodanteOrdersClient {
          * @param {listOrderOptionalParams} params
          * @returns 
          */
-        listOrders: async (params: listOrderOptionalParams): Promise<getOrderResponse[]> => {
+        listOrders: async (params?: listOrderOptionalParams): Promise<getOrderResponse[]> => {
             if (params) {
                 const queryParams = CodanteClientUtils.utils.makeQueryParams(params)
                 const response = await fetch(`${this.BASE_API_URL}/orders?${queryParams}`)

@@ -15,5 +15,10 @@ function testRegisterUser() {
     });
 }
 
+function testOrdersApi() {
+    CodanteClient.orders.listOrders().then((response) => {
+        console.log(response);
+    });
+}
 
-testRegisterUser();
+testOrdersApi()
