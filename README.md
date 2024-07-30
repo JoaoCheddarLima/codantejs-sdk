@@ -48,4 +48,22 @@ CodanteClient.olympics.event(1)
     .catch(console.error);
 ```
 
+### All Methods covered on the lib
+```js
+import { CodanteClient } from "codantejs-sdk";
+
+CodanteClient.olympics.countries()
+CodanteClient.olympics.disciplines()
+CodanteClient.olympics.event()
+CodanteClient.olympics.events()
+CodanteClient.olympics.venues()
+
+CodanteClient.orders.createOrder()
+CodanteClient.orders.deleteOrder()
+CodanteClient.orders.getOrder()
+CodanteClient.orders.listOrders()
+
+CodanteClient.registerUser.register()
+```
+
 ### All the methods are available on [Codante's API](https://docs.apis.codante.io/olympic-games-english)
