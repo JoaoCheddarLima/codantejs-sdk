@@ -64,6 +64,13 @@ CodanteClient.orders.getOrder()
 CodanteClient.orders.listOrders()
 
 CodanteClient.registerUser.register()
+
+CodanteClient.utils.isValidPassword()
+CodanteClient.utils.isValidCPF()
+CodanteClient.utils.isValidPhone()
+CodanteClient.utils.isValidCEP()
+CodanteClient.utils.formatCurrency()
+CodanteClient.utils.makeQueryParams()
 ```
 
 ### All the methods are available on [Codante's API](https://docs.apis.codante.io/olympic-games-english)
