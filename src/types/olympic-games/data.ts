@@ -1,8 +1,10 @@
 import {
   CountriesTypes,
   DisciplinesTypes,
+  Links,
+  Meta,
   VenuesTypes,
-} from './index';
+} from '../index';
 
 export interface EventOptionalParams {
     country?: CountriesTypes | string;
@@ -38,24 +40,6 @@ export interface Competitor {
     result_position: string;
     result_winnerLoserTie: "L" | "W" | "T";
     result_mark: string;
-}
-
-export interface Links {
-    first: string;
-    last: string;
-    prev: string;
-    next: string;
-}
-
-export interface Meta {
-    current_page: number;
-    from: number;
-    last_page: number;
-    links?: string[];
-    path: string;
-    per_page: number;
-    to: number;
-    total: number;
 }
 
 export interface Venue {
