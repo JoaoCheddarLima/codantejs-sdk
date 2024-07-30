@@ -1,1 +1,1 @@
-export const test = ''
+export * from './data'
